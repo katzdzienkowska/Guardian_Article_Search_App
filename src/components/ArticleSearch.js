@@ -19,8 +19,9 @@ const ArticleSearch = ({onKeywordSearched}) => {
     return ( 
         <section className='form-container'>
             <form className='form' onSubmit={handleKeywordSubmit}>
-            <input id='search'type='text' placeholder='Search here' autoFocus autoComplete='off' required value={keywordChange} onChange={handleKeywordChange}/>
-            <input id='button' type='submit' value='Search'></input>
+                <label htmlFor='search'>What do you want to search for:</label>
+                <input id='search'type='text' name="search" placeholder='Type here...' autoFocus autoComplete='off' required value={keywordChange} onChange={handleKeywordChange}/>
+                <input id='button' type='submit' value='Search'></input>
             </form>
         </section>
     );
