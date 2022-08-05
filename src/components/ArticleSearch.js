@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-
 const ArticleSearch = ({onKeywordSearched}) => {
 
     const [keywordChange, setKeywordChange] = useState('');
